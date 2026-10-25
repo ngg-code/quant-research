@@ -218,3 +218,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# ---- Project rules ----
+# Licensed data (Capital IQ etc.) never goes on GitHub
+data/
+*.parquet
+*.xlsx
+*.xls
+*.csv
+# ...except tiny synthetic files used by tests
+!tests/fixtures/*.csv
+
+# Mac and editor files
+.DS_Store
+.vscode/
